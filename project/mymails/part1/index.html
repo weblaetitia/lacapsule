@@ -9,7 +9,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container flex-col-center">
+        <div class="message-box">
+            <div class="total-message flex-col-center">
+                <p>Total des messages :<br />
+                <span class="bold">5</span></p>
+            </div>
+            <div class="search-forms">
+                    <div class="grow1">
+                        <input type="text" name="search" id="search" placeholder="Search message">
+                    </div>
+                    <div class="shrink1">
+                        <input class="btn" type="button" value="Search">
+                    </div>
+            </div>
+        </div>
+        <div class="message-box">
+            <div class="flex-row">
+                <div class="grow1">
+                    <input type="text" name="addmessage" id="addmessage" placeholder="Ecrire un message">
+                </div>
+                <div class="shrink1">
+                    <input class="btn" type="button" value="Envoyer">
+                </div>
+            </div>
+        </div>
         <div class="message-box">
             <div class="avatar-box">
                 <img class="avatar" src="images/avatar-1.jpg" alt="Noel Paganelli" />
