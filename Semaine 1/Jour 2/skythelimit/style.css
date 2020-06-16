@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 100vh;
+    background: url(ressources/assets/background.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+header h1 {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+}
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    background-color: white;
+    padding: 1em;
+    width: 80%;
+    max-width: 700px;
+}
+article:first-child {
+    margin-top: 2em;
+}
+article:last-child{
+    margin-bottom: 2em;
+}
+
+article img {
+    width: 25%;
+    height: auto;
+    margin-right: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article p {
+    font-size: .9em;
+}
