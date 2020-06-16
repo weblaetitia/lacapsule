@@ -22,4 +22,3 @@ for (var i=0; i<tableau.length; i++) {
 
 
 console.log(tableau);
-console.log('something else');
