@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cookie {
+  width: 80px;
+  margin: 40px;
+  display: block;
+}
+.cookie:hover {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
