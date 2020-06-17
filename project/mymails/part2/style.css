@@ -28,47 +28,51 @@ h1, h2, h3, h4, h5, h6, .bold {
 .flex-row {
     display: flex;
 }
-.message-box {
+.msg-box {
     width: 80%;
     max-width: 600px;
     background-color: white;
     border: #DADADA solid 1px;
     padding: 1.5em;
+    padding-right: .5em;
     display: flex;
     border-top: none;
 }
-.message-box:first-child {
+.msg-box:first-child {
     border-top: #DADADA solid 1px;
 }
 
-.message-box .avatar-box {
+.msg-box .avatar-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.message-box .avatar {
+.msg-box .avatar {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 1.5em;
 }
-.message-box .trash-box {
-    padding-left: 1.5em;
+.msg-box .trash-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.message-box .trash {
-    width: 15px;
-    height: auto;
+
+.msg-box .fa-trash-alt {
+    padding: 1.5em;
+    color: rgb(25, 25, 25);
+}
+.msg-box .fa-trash-alt:hover {
+    color: rgb(194, 13, 13);
 }
 
-.message-box h6 {
+.msg-box h6 {
     font-size: 1em;
     margin-bottom: 1em;
 }
 
-.message-box p {
+.msg-box p {
     font-size: .9em;
     line-height: 1.5em;
 }
@@ -81,6 +85,9 @@ h1, h2, h3, h4, h5, h6, .bold {
 .search-forms {
     flex-grow: 1;
     display: flex;
+}
+.width-100 {
+    width: 100%;
 }
 .shrink1 {
     flex-shrink: 1;
@@ -102,7 +109,10 @@ input:focus {
     border-radius: 0;
 }
 #search, #addmessage {
-    width: 95%;
+    width: 100%;
+}
+#btn-msg, #btn-search {
+    margin-left: 1.5em;
 }
 .btn {
     border: #0052CC solid 1px;
