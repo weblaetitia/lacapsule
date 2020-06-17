@@ -25,12 +25,14 @@ for (var i=0; i<priorityArray.length; i++) {
 var emergencyBtn = document.getElementById('emergency-btn');
 
 emergencyBtn.addEventListener('click', function() {
+
     for (var i=0; i<priorityArray.length; i++) {
         var number = priorityArray[i].textContent;
-        console.log(number)
+        console.log(priorityArray.length)
         if ((number == 1) || (number == 2)) {
             priorityArray[i].parentNode.remove();
             console.log('removed')
+            i--;
         } 
     }
 })
